@@ -43,7 +43,7 @@ function PlayButton() {
             >
               <MediaPlayer
                 title="A Year In His Presence"
-                src={vid}
+                src={"https://youtu.be/vQZUCda8-4A"}
                 crossOrigin
                 aspectRatio='16/9'
                 load='visible'
