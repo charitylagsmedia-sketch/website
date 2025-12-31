@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MediaPlayer, MediaProvider } from '@vidstack/react';
 import playButton from "../assets/icons/playButton.svg";
 import vid from '../assets/videos/A YEAR IN HIS PRESENCE.mp4';
-import thumbnail from "../assets/purple ray image.png";
+import thumbnail from "../assets/thumbnail.jpeg";
 import close from "../assets/icons/close.svg";
 import { AnimatePresence, motion } from 'motion/react';
 
@@ -43,7 +43,7 @@ function PlayButton() {
             >
               <MediaPlayer
                 title="A Year In His Presence"
-                src={"https://youtu.be/vQZUCda8-4A"}
+                src={vid}
                 crossOrigin
                 aspectRatio='16/9'
                 load='visible'
