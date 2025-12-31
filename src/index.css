@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-white;
+  @apply bg-black;
+}
+
+@font-face{
+  font-family: 'Quantico';
+  src: url('/fonts/Quantico-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --font-quantico: 'Quantico', sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
+}
