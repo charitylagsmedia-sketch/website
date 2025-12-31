@@ -1,9 +1,7 @@
 import React from 'react'
 import { MediaPlayer, MediaProvider } from '@vidstack/react'
-import vid from '../assets/videos/A YEAR IN HIS PRESENCE.mp4'
 import thumbnail from "../assets/thumbnail.jpeg";
-import { motion } from 'motion/react'; 
-
+import vid from '../assets/videos/trailer-1.mp4';
 
 export default function About() {
   return (
