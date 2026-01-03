@@ -1,6 +1,8 @@
 import { BrowserRouter } from 'react-router-dom'
 import {About, Header, Team, Hero, PlayButton, Acknowledgement, Footer, AboutLogos} from './components'
 import React, { useState, useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export default function App() {
     const [isMobile, setIsMobile] = useState(true);
@@ -27,33 +29,37 @@ export default function App() {
     );
   }
   return (
-    <BrowserRouter>
-      <div className='relative max-h-full max-w-full'>
-        <div >
-          <div id='hero'>
-            <Hero/>
+    <>
+      <SpeedInsights />
+      <Analytics />
+      <BrowserRouter>
+        <div className='relative max-h-full max-w-full'>
+          <div >
+            <div id='hero'>
+              <Hero/>
+            </div>
+            <Header/>
           </div>
-          <Header/>
-        </div>
-        
-        <div id='about'>
-          <About/>
-        </div>
-        <AboutLogos/>
-        <PlayButton/>
+          
+          <div id='about'>
+            <About/>
+          </div>
+          <AboutLogos/>
+          <PlayButton/>
 
-        <div id='team'>
-          <Team/>
-        </div>
+          <div id='team'>
+            <Team/>
+          </div>
 
-        <div id='acknowledgement'>
-          <Acknowledgement/>
-        </div>
+          <div id='acknowledgement'>
+            <Acknowledgement/>
+          </div>
 
-        <div id='contactUs'>
-          <Footer/>
-        </div>
-      </div>  
-    </BrowserRouter>
+          <div id='contactUs'>
+            <Footer/>
+          </div>
+        </div>  
+      </BrowserRouter>
+    </>
   )
 }
